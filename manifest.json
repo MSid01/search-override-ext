@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "My Chrome Extension",
+  "version": "1.0",
+  "description": "Customize Chrome settings with this extension.",
+  "permissions": ["search"],
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Yahoo",
+      "keyword": "yahoo",
+      "search_url": "https://search.yahoo.com/search?q={searchTerms}",
+      "favicon_url": "https://s.yimg.com/rz/l/favicon.ico",
+      "suggest_url": "https://search.yahoo.com/sugg/chrome?output=fxjson&appid=firefox&q={searchTerms}",
+      "image_url": "https://images.search.yahoo.com/yhs/search?fr=yhs-mozilla-004&fr2=p:s,v:w,i:images,ra:imagesearch&tab=organic&ei=UTF-8&query={searchTerms}",
+      "search_url_post_params": "search_lang=en",
+      "suggest_url_post_params": "suggest_lang=en",
+      "instant_url": "https://search.yahoo.com/instantsearch?ei=UTF-8&fx=1&q={searchTerms}",
+      "instant_url_post_params": "instant_lang=en",
+      "image_url_post_params": "image_lang=en",
+      "is_default": true,
+      "encoding": "UTF-8"
+    }
+  }
+}
